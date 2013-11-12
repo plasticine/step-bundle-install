@@ -43,6 +43,10 @@ if [ "$WERCKER_BUNDLE_INSTALL_FROZEN" = "true" ] ; then
     bundle_command="$bundle_command --frozen"
 fi
 
+if [ "$WERCKER_BUNDLE_EXTRA_FLAGS" ] ; then
+    bundle_command="$bundle_command $WERCKER_BUNDLE_EXTRA_FLAGS"
+fi
+
 # Install bundler gem if needed
 if ! type bundle &> /dev/null ;
 then

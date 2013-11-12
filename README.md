@@ -19,6 +19,7 @@ This is an _smart_ version of the `bundle install` command that stores downloade
 * `deployment` (optional) Install using defaults tuned for deployment environments.
 * `local` (optional) Do not attempt to fetch gems remotely and use the gem cache instead.
 * `frozen` (optional) Do not allow the Gemfile.lock to be updated after this install.
+* `extra-flags` (optional) Additional flags to pass to bundler.
 
 # Example
 
